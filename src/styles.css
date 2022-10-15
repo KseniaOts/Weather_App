@@ -13,6 +13,12 @@ body {
 .dayandtime {
   font-size: 30px;
 }
+li::first-letter {
+  text-transform: capitalize;
+}
+li {
+  list-style: none;
+}
 .day1,
 .day2,
 .day3 {

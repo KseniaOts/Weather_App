@@ -36,20 +36,29 @@
           <div class="col-6 weather">
             <div id="city">Tallinn</div>
 
-            <div id="temperature">21°C</div>
+            <div>
+              <strong id="temperature"></strong
+              ><span class="units">
+                <a href="#" id="celsius-link">°C </a>/
+                <a href="#" id="farenheit-link">°F </a></span
+              >
+            </div>
 
             <img
               class="weatherimg"
               src="https://www.seekpng.com/png/detail/845-8451388_sunlight-clipart-emoji-rain-and-sun-cloud.png"
               alt="Sunlight Clipart Emoji - Rain And Sun Cloud@seekpng.com"
+              id="icon"
             />
+            <li class="dayandtime" id="description">Light Rain</li>
             <div class="dayandtime" id="daytime">Tuesday 18:30</div>
             <div class="dayandtime" id="humidity">Humidity 77%</div>
             <div class="dayandtime" id="wind">Wind 8 km/h</div>
           </div>
 
           <div class="col-2 day1">
-            Monday <br />
+            Monday
+            <br />
             19°C
             <br />
             <i class="fa-solid fa-cloud-sun-rain"></i>
