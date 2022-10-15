@@ -75,3 +75,8 @@ li {
   color: #303193;
   border-radius: 5px;
 }
+.active {
+  color: #303193;
+  cursor: default;
+  text-decoration: none;
+}
