@@ -19,6 +19,48 @@ if (currentMin < 10) {
 }
 daytime.innerHTML = `${day} ${currentHours}:${currentMin}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+   <div>
+              <div class="weather=forcast-date">Monday</div>
+              <div class="weather=forcast-temperatures">
+                <span class="weather-forecast-temperature max"> 19°</span>
+                <span class="weather-forecast-temperature min"> 12°</span>
+              </div>
+
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+            </div>
+  `;
+
+  forecastHTML =
+    forecastHTML +
+    `
+   <div>
+              <div class="weather=forcast-date">Monday</div>
+              <div class="weather=forcast-temperatures">
+                <span class="weather-forecast-temperature max"> 19°</span>
+                <span class="weather-forecast-temperature min"> 12°</span>
+              </div>
+
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+            </div>
+  `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let form = document.querySelector(`.weathersearch`);
 form.addEventListener("submit", handleSubmit);
 
@@ -37,6 +79,8 @@ function displayWeatherCondition(response) {
   );
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
+
+  displayForecast();
 
   celsiusTemperature = response.data.main.temp;
 }
