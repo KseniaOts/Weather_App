@@ -46,6 +46,10 @@ li {
 .col-2 {
   position: relative;
   top: 10px;
+  color: #303193;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 350px;
 }
 
 .searchbutton {
