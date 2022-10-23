@@ -75,9 +75,17 @@ function displayWeatherCondition(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
 
-  displayForecast();
+  getForecast(response.data.coord);
 
   celsiusTemperature = response.data.main.temp;
+}
+
+function formatDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
 }
 
 function searchCity(cityName) {
