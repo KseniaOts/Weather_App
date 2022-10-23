@@ -49,7 +49,8 @@ li {
   color: #303193;
   font-weight: 500;
   font-size: 20px;
-  margin-top: 350px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .searchbutton {
@@ -83,4 +84,10 @@ li {
   color: #303193;
   cursor: default;
   text-decoration: none;
+}
+small {
+  position: relative;
+
+  margin-bottom: 200px;
+  text-align: center;
 }
